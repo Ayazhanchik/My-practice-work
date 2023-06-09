@@ -1,0 +1,193 @@
+<!DOCTYPE html> 
+<html> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style> 
+body { 
+  font-family: Arial; 
+  margin: 0; 
+} 
+ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+img { 
+  vertical-align: middle; 
+} 
+ 
+ 
+.container { 
+  position: relative; 
+} 
+ 
+ 
+.mySlides { 
+  display: none; 
+} 
+ 
+.cursor { 
+  cursor: pointer; 
+} 
+ 
+ 
+.prev, 
+.next { 
+  cursor: pointer; 
+  position:absolute; 
+  top: 30%; 
+  width: auto; 
+  padding: 16px; 
+  margin-top: -30px; 
+  color: black; 
+  font-weight: bold; 
+  font-size: 10px; 
+  border-radius: 0 6px 6px 0; 
+  user-select: none; 
+  -webkit-user-select: none; 
+} 
+ 
+ 
+.next { 
+  right: 0; 
+  border-radius: 3px 0 0 3px; 
+} 
+ 
+.prev:hover, 
+.next:hover { 
+  background-color: rgba(0, 0, 0, 0.8); 
+} 
+ 
+.numbertext { 
+  color: #f2f2f2; 
+  font-size: 12px; 
+  padding: 8px 12px; 
+  position: absolute; 
+  top: 0; 
+} 
+ 
+ 
+.caption-container { 
+  text-align: center; 
+  background-color: #222; 
+  padding: 2px 16px; 
+  color: white; 
+} 
+ 
+.row:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+} 
+ 
+.column { 
+  float: left; 
+  width: 16.66%; 
+} 
+ 
+.demo { 
+  opacity: 0.6; 
+} 
+ 
+.active, 
+.demo:hover { 
+  opacity: 1; 
+} 
+</style> 
+<body> 
+ 
+<h2 style="text-align:center">Slideshow Gallery</h2> 
+ 
+<div class="container"> 
+  <div class="mySlides"> 
+    <div class="numbertext">1 / 6</div> 
+    <center><img src="https://avatars.mds.yandex.net/i?id=9e0c92c939b727fdfaa23098f4921c5bab3e8b77-8497455-images-thumbs&n=13" style="width:60%"></center> 
+  </div>
+  <div class="mySlides"> 
+    <div class="numbertext">2 / 6</div> 
+    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJLrPXGmQWSgZKYIr3p4ko4KImOSjVCnz9HQc51WZVnrFDlMwb7WYsQzqB6g68t_FZ9k&usqp=CAU" style="width:60%"></center> 
+  </div> 
+ 
+  <div class="mySlides"> 
+    <div class="numbertext">3 / 6</div> 
+    <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGVIwFgBe5QXGo6BtFquaghuOM_fSQOi2xhA&usqp=CAU" style="width:60%"></center> 
+  </div> 
+     
+  <div class="mySlides"> 
+    <div class="numbertext">4 / 6</div> 
+    <center><img src="https://baucenter.ru/preview/r/612x612/c/612x612/q/95/upload/pictures/30/301009490-0@2x.jpg" style="width:60%"></center> 
+  </div> 
+ 
+  <div class="mySlides"> 
+    <div class="numbertext">5 / 6</div> 
+    <center><img src="https://kalix.club/uploads/posts/2023-03/thumbs/1677786480_kalix-club-p-milie-kotiki-na-zastavku-oboi-34.jpg" style="width:60%"></center> 
+  </div> 
+     
+  <div class="mySlides"> 
+    <div class="numbertext">6 / 6</div> 
+    <center><img src="https://cs11.livemaster.ru/storage/topic/NxN/bc/1e/0c8861b1c91001427f5d79f08a5a19f14a275e.jpg?h=uy7Oq01pGwZgTKDb9zi4sQ" style="width:60%"></center> 
+  </div> 
+     
+  <a class="prev" onclick="plusSlides(-1)">❮</a> 
+  <a class="next" onclick="plusSlides(1)">❯</a> 
+ 
+  <div class="caption-container"> 
+    <p id="caption"></p> 
+  </div> 
+ 
+  <div class="row"> 
+    <div class="column"> 
+      <img class="demo cursor" src="https://avatars.mds.yandex.net/i?id=9e0c92c939b727fdfaa23098f4921c5bab3e8b77-8497455-images-thumbs&n=13" style="width:100%" onclick="currentSlide(1)" alt="Tinker"> 
+    </div> 
+    <div class="column"> 
+      <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJLrPXGmQWSgZKYIr3p4ko4KImOSjVCnz9HQc51WZVnrFDlMwb7WYsQzqB6g68t_FZ9k&usqp=CAU" style="width:100%" onclick="currentSlide(2)" alt="Mystang"> 
+ 
+    </div> 
+    <div class="column"> 
+      <img class="demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGVIwFgBe5QXGo6BtFquaghuOM_fSQOi2xhA&usqp=CAU" style="width:100%" onclick="currentSlide(3)" alt="akhalteke"> 
+    </div> 
+    <div class="column"> 
+      <img class="demo cursor"
+      src="https://baucenter.ru/preview/r/612x612/c/612x612/q/95/upload/pictures/30/301009490-0@2x.jpg" style="width:100%" onclick="currentSlide(4)" alt="Marvary"> 
+    </div> 
+    <div class="column"> 
+      <img class="demo cursor" src="https://kalix.club/uploads/posts/2023-03/thumbs/1677786480_kalix-club-p-milie-kotiki-na-zastavku-oboi-34.jpg" style="width:100%" onclick="currentSlide(5)" alt="Traken"> 
+    </div>     
+    <div class="column"> 
+      <img class="demo cursor" src="https://cs11.livemaster.ru/storage/topic/NxN/bc/1e/0c8861b1c91001427f5d79f08a5a19f14a275e.jpg?h=uy7Oq01pGwZgTKDb9zi4sQ" style="width:100%" onclick="currentSlide(6)" alt="Arab"> 
+    </div> 
+  </div> 
+</div> 
+ 
+<script> 
+var slideIndex = 1; 
+showSlides(slideIndex); 
+ 
+function plusSlides(n) { 
+  showSlides(slideIndex += n); 
+} 
+ 
+function currentSlide(n) { 
+  showSlides(slideIndex = n); 
+} 
+ 
+function showSlides(n) { 
+  var i; 
+  var slides = document.getElementsByClassName("mySlides"); 
+  var dots = document.getElementsByClassName("demo"); 
+  var captionText = document.getElementById("caption"); 
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length} 
+  for (i = 0; i < slides.length; i++) { 
+      slides[i].style.display = "none"; 
+  } 
+  for (i = 0; i < dots.length; i++) { 
+      dots[i].className = dots[i].className.replace(" active", ""); 
+  } 
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active"; 
+  captionText.innerHTML = dots[slideIndex-1].alt; 
+} 
+</script> 
+     
+</body> 
+</html>
