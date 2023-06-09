@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Task2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<div>
+    <table>
+
+<body>
+  <div class="container">
+        <div class="content">
+              
+                    <h1 style="color: #0a01b1" class="underline-on-hover">Boeing 777: Dozens grounded after Denver engine failure</h1>
+                    <img src="C:\Users\Аcer\Desktop\photo_2023-06-06_14-59-16.jpg"></td>
+                    <p>US plane manufacturer Boeing has recommended grounding all of the 777-model aircraft which have the same type of engine that suffered failure and shed debris over Denver on Saturday.</p>
+                </div>
+            </div>
+              
+                    <h1 style="color: #0a01b1" class="underline-on-hover">Three reasons Biden’s Covid bill is a big deal</h1>
+                    <img src="C:\Users\Аcer\Desktop\photo_2023-06-06_14-59-21.jpg"></td>
+                    <p>Back in 2010, then Vice-President Joe Biden used a swear word to emphasise how big a deal he thought congressional passage of sweeping Democrat-backed healthcare reforms was.</p>
+              
+            </div>
+        </div>
+        <div class="table-container"></div>
+        <table cellspacing="0" cellpadding="5" border="1" align="right">
+        <tr class="two">
+        <th>No</th>
+        <th>Team</th>
+        <th>P</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GD</th>
+        <th>P</th>
+        </tr>
+        <tr class="green">
+        <td>1</td>
+        <td>Real  Madrid CF</td>
+        <td>38</td>
+        <td>26</td>
+        <td>9</td>
+        <td>3</td>
+        <td>70-25</td>
+        <td>87</td>
+        </tr>
+        <tr class="green">
+        <td>2</td>
+        <td>Barselona FC</td>
+        <td>38</td>
+        <td>25</td>
+        <td>7</td>
+        <td>6</td>
+        <td>86-38</td>
+        <td>82</td>
+        </tr>
+        <tr class="green">
+        <td>3</td>
+        <td>Atletico Madrid</td>
+        <td>38</td>
+        <td>18</td>
+        <td>16</td>
+        <td>4</td>
+        <td>51-27</td>
+        <td>70</td>
+        </tr>
+        <tr class="green">
+        <td>4</td>
+        <td>Sevilla FC</td>
+        <td>38</td>
+        <td>19</td>
+        <td>13</td>
+        <td>6</td>
+        <td>54-34</td>
+        <td>70</td>
+        </tr>
+        <tr class="yellow">
+        <td>5</td>
+        <td>Vilareal FC</td>
+        <td>38</td>
+        <td>18</td>
+        <td>6</td>
+        <td>14</td>
+        <td>63-49</td>
+        <td>60</td>
+        </tr>
+        <tr class="yellow">
+        <td>6</td>
+        <td>Real Sociedad</td>
+        <td>38</td>
+        <td>16</td>
+        <td>8</td>
+        <td>14</td>
+        <td>56-48</td>
+        <td>56</td>
+        </tr>
+        <tr class="yellow">
+        <td>7</td>
+        <td>Granada CF</td>
+        <td>38</td>
+        <td>16</td>
+        <td>8</td>
+        <td>14</td>
+        <td>52-45</td>
+        <td>56</td>
+        </tr>
+        <tr>
+        <tr class="yellow">
+        <td>8</td>
+        <td>Getafe</td>
+        <td>38</td>
+        <td>18</td>
+        <td>6</td>
+        <td>14</td>
+        <td>63-48</td>
+        <td>60</td>
+        </tr>
+        <tr class="yellow">
+            <td>9</td>
+            <td>Valencia CF</td>
+            <td>38</td>
+            <td>11</td>
+            <td>6</td>
+            <td>13</td>
+            <td>46-53</td>
+            <td>53</td>
+        </tr>
+        <tr class="yellow">
+            <td>10</td>
+            <td>Athletic Bilbao</td>
+            <td>38</td>
+            <td>14</td>
+            <td>11</td>
+            <td>12</td>
+            <td>46-56</td>
+            <td>53</td>
+        </tr>
+        <tr class="yellow">
+            <td>11</td>
+            <td>Osasuna</td>
+            <td>38</td>
+            <td>13</td>
+            <td>13</td>
+            <td>12</td>
+            <td>46-54</td>
+            <td>52</td>
+        </tr>
+        <tr class="yellow">
+            <td>12</td>
+            <td>Levante</td>
+            <td>38</td>
+            <td>18</td>
+
+<td>6</td>
+            <td>14</td>
+            <td>60-58</td>
+            <td>60</td>
+        </tr>
+        <tr class="red">
+            <td>13</td>
+            <td>Valladolid</td>
+            <td>38</td>
+            <td>18</td>
+            <td>6</td>
+            <td>14</td>
+            <td>56-53</td>
+            <td>45</td>
+        </tr>
+        <tr class="red">
+                <td>14</td>
+                <td>Eibar</td>
+                <td>38</td>
+                <td>17</td>
+                <td>3</td>
+                <td>17</td>
+                <td>42-44</td>
+                <td>49</td>
+        </tr>
+        </table>
+    </div>
+   </body>
+</html>
+var a = parseInt(prompt("Enter your score: "))
+var b = parseInt(prompt("Enter your score: "))
+if(a%b===0){
+    alert("Divisible");
+     } else {
+        alert("Not Divisible"); 
+     }
